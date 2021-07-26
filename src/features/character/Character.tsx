@@ -53,7 +53,7 @@ export const Character = (props: Props) => {
     return (
       <div>
             <Button style={{fontSize: '.9em'}} variant="dark"  onClick={handleShow}>
-            <Image style={{width: '2.5rem'}} src={props.image} rounded />
+            <Image style={{width: '4.5rem'}} src={props.image} rounded />
           {props.name .length <= 10 ? props.name : props.name.slice(0, 7) + "..."}
         </Button>
   
