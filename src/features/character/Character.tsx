@@ -16,10 +16,10 @@ interface Props {
 export const Character = (props: Props) => {
     return (
         <div >
-            <Card text='light' bg='dark' border="dark" style={{ width: '9.5rem' }}>
+            <Card text='light' bg='dark' border="dark" style={{ width: '9rem', fontSize: '.8em' }}>
   <Card.Img variant="top" src={props.image} />
   <Card.Body>
-    <Card.Title>{props.name}</Card.Title>
+    <Card.Title style={{fontSize: '1.3em'}}>{props.name}</Card.Title>
     <Card.Text>
     Name: {props.name}
     </Card.Text>

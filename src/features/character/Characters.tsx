@@ -21,6 +21,7 @@ export default function Characters () {
             <form onSubmit={getCharacter}>
                 <input style={{color: 'white', background: '#212529', width: '12rem'}} type='text' name='findChar' placeholder='Enter Character Name'/>
             </form>
+            <br />
             {console.log(data)}
             <div className='wrapper'>
            {isLoading && 'Loading...'}
