@@ -16,7 +16,7 @@ interface Props {
 export const Character = (props: Props) => {
     return (
         <div >
-            <Card style={{ width: '10rem' }}>
+            <Card text='light' bg='dark' border="dark" style={{ width: '9.5rem' }}>
   <Card.Img variant="top" src={props.image} />
   <Card.Body>
     <Card.Title>{props.name}</Card.Title>
