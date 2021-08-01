@@ -3,6 +3,7 @@ import { Character } from './Character'
 import { useGetCharacterByIdQuery, useGetCharacterByNameQuery } from './characterSlice'
 import './Characters.css';
 import Accordion from 'react-bootstrap/Accordion'
+import { Sidebar } from '../offcanvas/Sidebar';
 
 export default function Characters () {
     // const { data } = useGetCharacterByIdQuery(1)
@@ -18,9 +19,12 @@ export default function Characters () {
     }
     return (
         <div style={{padding: '2em'}}>
+            <span style={{ display: 'flex', fontSize: '.7em', justifyContent: 'space-between'}}>
             <form onSubmit={getCharacter}>
                 <input style={{color: 'white', background: '#212529', width: '12rem'}} type='text' name='findChar' placeholder='Enter Character Name'/>
             </form>
+            <Sidebar/>
+            </span>
             <br />
             {console.log(data)}
             <div className='wrapper'>
