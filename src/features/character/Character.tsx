@@ -23,7 +23,7 @@ export const Character = (props: Props) => {
   return (
     <div>
       <Button style={{ fontSize: '.9em' }} variant="dark" onClick={handleShow}>
-        <Image style={{ width: '4.5rem' }} src={props.image} rounded />
+        <Image style={{ width: '6rem' }} src={props.image} rounded />
         <span style={{ fontSize: '.7em', display: 'grid', overflow: 'hidden' }}>
         {props.name}
         </span>
