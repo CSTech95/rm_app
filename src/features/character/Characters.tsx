@@ -21,7 +21,7 @@ export default function Characters () {
         <div style={{padding: '2em'}}>
             <span style={{ display: 'flex', fontSize: '.7em', justifyContent: 'space-between'}}>
             <form onSubmit={getCharacter}>
-                <input style={{color: 'white', background: '#212529', width: '12rem'}} type='text' name='findChar' placeholder='Enter Character Name'/>
+                <input style={{color: 'blue', background: '#F0FFFF', height: '100%', border: 'none'}} type='text' name='findChar' placeholder='Enter Character Name'/>
             </form>
             <Sidebar/>
             </span>
