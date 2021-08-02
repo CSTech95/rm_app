@@ -1,10 +1,12 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { characterApi } from '../features/character/characterSlice';
 import counterReducer from '../features/counter/counterSlice';
+import sidebarReducer from '../features/sidebar/sidebarSlice'
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    myCharacters: sidebarReducer,
     [characterApi.reducerPath]: characterApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>

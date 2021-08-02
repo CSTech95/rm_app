@@ -8,6 +8,9 @@ interface Character {
         status?: string;
         image: string;
         gender: string;
+      location: {
+          name: string;
+        }
     }[];
 }
 
